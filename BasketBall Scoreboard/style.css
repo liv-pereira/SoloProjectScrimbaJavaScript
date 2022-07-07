@@ -1,0 +1,163 @@
+body {
+  margin: 0; 
+  
+  
+}
+.fundo{
+ 
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.fundo::before {    
+  content: "";
+  background: url(assets/img/markus-spiske-BfphcCvhl6E-unsplash.jpg);
+  background-size: cover; 
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.65;
+}
+
+
+.container {
+ 
+  display: flex;
+  justify-content: space-around;
+ 
+  width:100%;
+  
+  background-color:  #a8988d ;
+
+  opacity: 0.9;
+  box-shadow: 10px 10px 10px #000
+}
+h3{
+  text-align: center;
+  color: #fff;
+  text-shadow:#392620 0.05em 0.05em 0.05em;
+  font-size: 2em;
+}
+p{
+  color: black;
+  text-align: center;
+  font-weight: 700px;
+  font-size: 2em;
+}
+.points{
+  margin-bottom: 0.8em;
+  
+}
+.botao1{
+  display: inline-block; 
+  padding: 2.5px 7.5px; 
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #392620;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px #cf6143;
+  
+  
+}
+.butao1:hover {background-color: #3e8e41}
+
+.botao1:active {
+  background-color: #392620;
+  box-shadow: 0 5px #cf6143;
+  transform: translateY(4px);
+}
+
+#tempo {
+  position: fixed; 
+  right: 12px;
+  bottom: 8px; 
+  
+  font-size: 16px;
+
+}
+#botao2{
+  
+font-size: 0.8em;
+font-weight: 700;
+background-color: #cf6143;
+/* border: 2px solid #392620; */
+border-radius: 20px;
+padding: 10px 15px;
+position: fixed;
+top: 4em;
+right: center; 
+
+
+}
+.coluna{
+  padding: 15px 20px;
+}
+
+@media (min-width: 576px){
+    
+  /* Layout */
+  .container{
+    /* max-width: 540px; */
+    width: 60%;
+  }
+  .botao1{
+    padding: 5px 15px; 
+  }
+  #botao2{
+  
+    font-size: 1em;
+    font-weight: 700;
+    background-color: #cf6143;
+    border: 2px solid #392620;
+    border-radius: 25px;
+    padding: 10px 15px;
+    position: fixed;
+    /* right: center; */
+    /* bottom:  4.5em; */
+    
+    
+    }
+}
+
+/* ------------ Tablet Retrato  --------------- */
+@media (min-width: 768px){
+
+/* Layout */
+.container{
+  max-width: 725px; 
+}
+
+}
+
+/*------------- Tablet Paisagem ---------------- */
+@media (min-width: 992px){
+
+/* Layout */
+.container{
+  max-width: 960px;
+}
+
+
+}
+
+
+/* -----------  PC ------------------------------- */
+@media (min-width: 1200px){
+
+/* Layout */
+.container{
+  max-width: 1140px;
+}
+
+}

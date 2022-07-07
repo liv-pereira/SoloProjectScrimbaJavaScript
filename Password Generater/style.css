@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Karla:wght@400;500;800&family=Poppins:wght@400;500;700&family=Roboto:wght@400;700&display=swap');
+
+
+body{
+  background-color: #1F2937;
+  background-size: cover;
+ 
+  
+}
+.container{
+
+  margin-top: 6em;
+  height: 75vh;
+ 
+
+}
+
+
+h1{
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  text-align:left;
+  margin: 30px 15px 5px 15px;
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+}
+h1 span{
+  color: #4ADF86;
+}
+p, #subtitle{
+  font-family: 'Inter', sans-serif;
+  color: #D0D0D0;
+  font-size: 12px;
+  margin: 0px 15px 10px 15px;
+}
+button{
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  margin: 15px 15px 0px 15px;
+  color: #fff;
+  background-color: #4ADF86;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.senha{
+ 
+  background-color: #D0D0D0;
+  color: black;
+  margin: 10px 15px 0px 15px;
+  padding:5px 5px;
+  width:9.5em;
+  border-radius: 5px;
+  text-align: center;
+}
+.displayRange{
+  display: flex;
+  align-items: center;
+  margin: 5px 15px;
+  justify-content: flex-start;
+ 
+}
+.display {
+  -webkit-appearance: none;
+  background: #D0D0D0;
+  outline: none;
+  width: 30%;
+  height: 20px;
+  border-radius: 9px;  
+  
+ 
+  
+}
+.display::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+
+  background: #4ADF86;
+  cursor: pointer;
+}
+.display::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+
+  background: #4ADF86;
+  cursor: pointer;
+}
+#displayRange{
+  color: #fff;
+  margin-left: 8px;
+}

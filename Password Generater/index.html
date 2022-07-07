@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Password Generater</title>
+  
+</head>
+<body>
+ 
+  <main>
+    <div class="container">
+    <h1>Generate a <span>random password</span></h1>
+    <p id="subtitle">Never use an insecure passaword again</p>
+    <div class="displayRange">
+      <input type="range" value="8" min="8" max="15" class="display"
+      oninput="this.nextElementSibling.value = this.value" id="display">
+      <output id="displayRange">8</output>
+      </div>
+    <button onclick="startPassword()">Generate password</button>
+    <section>
+      <p class="senha" id="senha1">Senha</p>
+      <!-- <input class="senha" id="senha1" type="text"> -->
+      <p class="senha" id="senha2">Senha</p>
+    </section>
+  </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
